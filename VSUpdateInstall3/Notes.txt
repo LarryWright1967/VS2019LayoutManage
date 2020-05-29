@@ -1,0 +1,21 @@
+
+The main purpose of the endever is to save bandwith in installing or updating visual studio.
+
+I am attempting to follow along with microsoft on how to perform instalation and updates to visual studio from a network location. So far I have basic creation of a local "layout" and instalation from that local layout. The plan is be able to install/update mutiple locations from a signal source to save on bandwidth. Additionally, getting the install and update to work from the local or network layout without first having the client machine check on the internet for updates to the installer or layout. 
+
+Ref
+https://docs.microsoft.com/en-us/visualstudio/install/create-a-network-installation-of-visual-studio?view=vs-2019
+https://docs.microsoft.com/en-us/visualstudio/install/update-a-network-installation-of-visual-studio?view=vs-2019
+https://docs.microsoft.com/en-us/visualstudio/install/controlling-updates-to-visual-studio-deployments?view=vs-2019
+https://docs.microsoft.com/en-us/visualstudio/install/automated-installation-with-response-file?view=vs-2019
+
+
+Notes;
+
+change installchanneluri, channeluri and install cataloguri in jason file?
+
+	"installChannelUri": "\\(Network)\\VSLayout\\ChannelManifest.json",
+	"channelUri": "\\(Network)\\VSLayout\\ChannelManifest.json",
+	"installCatalogUri": "\\(Network)\\VSLayout\\Catalog.json",
+
+etc.
